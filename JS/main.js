@@ -98,7 +98,7 @@ $(document).ready(function() {
                       message:'Please enter at least 10 characters and no more than 200'
                   },
                   notEmpty: {
-                      message: 'Please supply a description of your project'
+                      message: 'Please supply a description of your event'
                   }
                   }
               }
@@ -118,8 +118,12 @@ $(document).ready(function() {
           var bv = $form.data('bootstrapValidator');
 
           // Use Ajax to submit form data
+          if ($form.attr('action') == "") {
+            alert("SERVER UNAVAILABLE. PLEASE TRY AGAIN LATER");
+          } else {
           $.post($form.attr('action'), $form.serialize(), function(result) {
               console.log(result);
           }, 'json');
+        }
       });
 });
