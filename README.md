@@ -7,8 +7,7 @@ As of now all information such as merchandise and show dates are placeholders, a
 
 ********FORM SUBMISSION********
 As of now the form data is not set to go anywhere i.e. action="".
-Upon clicking "Send" an alert will display that says "SERVER UNAVAILABLE. PLEASE TRY AGAIN LATER".
-Click "okay" to close the form, and the forms success message will display.
+Upon clicking "Send" both the success and error messages will display as a means of showing what will happen in both cases.
 
 
 If you have any questions I can be reached at aljaywhite23@gmail.com

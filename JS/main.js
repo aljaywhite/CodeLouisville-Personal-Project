@@ -118,8 +118,8 @@ $(document).ready(function() {
           var bv = $form.data('bootstrapValidator');
 
           // Use Ajax to submit form data
-          if ($form.attr('action') == "") {
-            alert("SERVER UNAVAILABLE. PLEASE TRY AGAIN LATER");
+          if($form.attr('action') == "") {
+            $('#error_message').slideDown({ opacity: "show" }, "slow")
           } else {
           $.post($form.attr('action'), $form.serialize(), function(result) {
               console.log(result);
