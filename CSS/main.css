@@ -11,9 +11,22 @@ ____COLORS____
                         General Styles
 ********************************************************************************/
 
+header {
+  background-image: url("/Users/alanwhite/Google Drive/Code Projects/ZED/TYPHOID BEACH/Images/Typhoid-M-A.jpg");
+  height: 100vh;
+  background-size: cover;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poiret One", sans-serif;
+  color: #52ffd4;
+  text-shadow: 0 0 5px #000;
+}
+
 body {
   height: 100vh;
-	/*background-size: cover;*/
   background: rgba(255, 80, 80, .6) url("/Users/alanwhite/Google Drive/Code Projects/ZED/TYPHOID BEACH/Images/Typhoid-Back-Green.png") no-repeat center fixed;
   font-family: "Poiret One", sans-serif;
   font-weight: bold;
@@ -38,7 +51,7 @@ ol {
     width: 100%;
 }
 ol li {
-  padding: 10px 12px;
+  padding: 2px 15px;
 }
 
 li span {
@@ -61,6 +74,9 @@ li span {
   padding-bottom: 60px;
 }
 
+h4 {
+  text-align: center;
+}
 
 /*********************************************************************************
                         Navbar Styles--Bootstrap
@@ -110,10 +126,22 @@ li span {
 /*********************************************************************************
                         Schedule Table Styles
 ********************************************************************************/
-
+.row-dates {
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .table {
   background-color: rgba(0, 0, 0, 0.8);
   color: #52ffd4;
+}
+
+.table>tbody>tr>td>a {
+  color: #52ffd4;
+}
+
+.table>tbody>tr>td>a:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0 10px #fff;
 }
 
 .table>tbody>tr>td {
@@ -135,6 +163,14 @@ li span {
                         Carousel Styles--Merch
 ********************************************************************************/
 
+#merch>.row {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .carousel-control .icon-prev, .carousel-control .icon-next,
 .carousel-control .glyphicon-chevron-left, .carousel-control
 .glyphicon-chevron-right, .glyphicon-circle-arrow-left {
@@ -144,26 +180,53 @@ li span {
     z-index: 5;
 }
 
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 20px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0,0,0,1);
+}
+
 .carousel-indicators {
   background-color: rgba(0, 0, 0, 0)
 }
 
 .carousel-indicators .active {
   background-color: #52ffd4;
-  border: 1px solid #fff;
-  box-shadow: 0 0 5px #000;
+  border: 1px solid #52ffd4;
+  box-shadow: 0 0 3px #fff;
+  height: 5px;
 }
 
 .carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 5px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
     background-color: #000\9;
     background-color: rgba(0, 0, 0, .6);
     border: 1px solid #52ffd4;
-    border-radius: 10px;
+    border-radius: 0;
 }
 
+.glyphicon-chevron-left, .glyphicon-chevron-right {
+  color: #52ffd4;
+}
 /*********************************************************************************
                         Contact Form Styles
 ********************************************************************************/
+
+/*#formContainer {
+  padding: 0;
+}*/
 
 .contact {
   background-color: rgba(0, 0, 0, .6);
@@ -424,6 +487,7 @@ legend {
 }
 
 .hovereffect h2 {
+  display: inline-block;
   text-transform: uppercase;
   text-align: center;
   position: relative;
@@ -437,12 +501,13 @@ legend {
   text-decoration: none;
   padding: 7px 14px;
   border: 1px solid #52ffd4;
-  margin: 50px 0 0 0;
-  background-color: transparent;
+  margin: 50px 0 0;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .hovereffect a.info:hover {
   box-shadow: 0 0 5px #52ffd4;
+  background-color: rgba(255, 80, 80, 1);
 }
 
 .hovereffect a.info, .hovereffect h2 {
@@ -516,5 +581,15 @@ legend {
 @media screen and (min-width: 994px) {
   td {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+.table-responsive {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-y: hidden;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: none;
   }
 }
