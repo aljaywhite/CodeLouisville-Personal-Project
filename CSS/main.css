@@ -12,10 +12,10 @@ ____COLORS____
 ********************************************************************************/
 
 header {
-  background-image: url("/Users/alanwhite/Google Drive/Code Projects/ZED/TYPHOID BEACH/Images/Typhoid-M-A.jpg");
+  background-image: url("../Images/Typhoid-M-A.jpg");
   height: 100vh;
   background-size: cover;
-  margin-bottom: 50px;
+  margin-bottom: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,10 +27,11 @@ header {
 
 body {
   height: 100vh;
-  background: rgba(255, 80, 80, .6) url("/Users/alanwhite/Google Drive/Code Projects/ZED/TYPHOID BEACH/Images/Typhoid-Back-Green.png") no-repeat center fixed;
+  background: rgba(255, 80, 80, .6) url("../Images/Typhoid-Back-Green.png") no-repeat center fixed;
   font-family: "Poiret One", sans-serif;
   font-weight: bold;
 }
+
 
 img {
   height: 100%;
@@ -82,7 +83,18 @@ h4 {
                         Navbar Styles--Bootstrap
 ********************************************************************************/
 
+.affix {
+      top: 0;
+      width: 100%;
+  }
+
 /* navbar */
+
+.navbar {
+  z-index: 10000;
+  border-radius: 0;
+}
+
 .navbar-default {
     background-color: #000;
     border: none;
@@ -126,6 +138,10 @@ h4 {
 /*********************************************************************************
                         Schedule Table Styles
 ********************************************************************************/
+#dates {
+  margin-top: 120px;
+}
+
 .row-dates {
   padding-left: 15px;
   padding-right: 15px;

@@ -24,8 +24,9 @@
   <header>
     <h1>Typhoid Beach</h1>
     <h4>"Break break break on thy cold grey slate oh disease"</h4>
+    <i class="fa fa-chevron-down fa-2x" aria-hidden="true"></i>
   </header>
-  <nav class="navbar navbar-default navbar-fixed-top">
+  <nav class="navbar navbar-default data-spy="affix"">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
@@ -200,7 +201,7 @@
   <!--Empty for contact link target-->
 </div>
 <div id="formContainer" class="container">
-  <form class="contact form-horizontal" action="" method="post"  id="contact_form">
+  <form class="contact form-horizontal" action="form.php" method="post" enctype="text/plain" id="contact_form">
     <fieldset>
 
     <!-- Form Name -->
@@ -213,7 +214,7 @@
       <div class="col-md-4 inputGroupContainer">
         <div class="input-group">
           <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-          <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
+          <input  id="first_name" name="first_name" placeholder="First Name" class="form-control"  type="text">
         </div>
       </div>
     </div>
