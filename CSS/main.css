@@ -24,9 +24,11 @@ header {
   color: #52ffd4;
   text-shadow: 0 0 5px #000;
 }
-
+html {
+  height: 100%;
+}
 body {
-  height: 100vh;
+  height: 100%;
   background: rgba(255, 80, 80, .6) url("../Images/Typhoid-Back-Green.png") no-repeat center fixed;
   font-family: "Poiret One", sans-serif;
   font-weight: bold;
@@ -77,6 +79,30 @@ li span {
 
 h4 {
   text-align: center;
+}
+
+#wrap {
+  min-height: 100%;
+  width: 100%;
+}
+
+#main {
+  overflow:auto;
+  padding-bottom:150px; /* this needs to be bigger than footer height*/
+}
+
+#bk-info {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #52ffd4;
+  text-shadow: 0 0 4px #fff;
 }
 
 /*********************************************************************************
