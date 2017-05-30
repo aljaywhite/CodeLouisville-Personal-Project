@@ -634,4 +634,19 @@ legend {
     -ms-overflow-style: -ms-autohiding-scrollbar;
     border: none;
   }
+
+  header {
+    display: none;
+  }
+
+  body {
+    height: 100%;
+    background: rgba(255, 80, 80, .6);
+    font-family: "Poiret One", sans-serif;
+    font-weight: bold;
+  }
+
+  #dates {
+    margin-top: 30px;
+  }
 }
